@@ -1,0 +1,62 @@
+<div class="row">
+    <div class="col-sm-12">
+        <form>
+            <div class="row">
+                <div class="col-sm-9 form-group">
+                    <label for="name">Recipe Name</label>
+                    <input class="form-control" type="text">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3">
+                    <label>Cooking Time</label>
+                    <input type="time" class="form-control">
+                </div>
+                <div class="col-sm-3">
+                    <label>Preperation Time</label>
+                    <input type="time" class="form-control">
+                </div>
+                <div class="col-sm-3">
+                    <label>Total Time</label>
+                    <input type="time" class="form-control">
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-sm-5 form-group">
+                    <label for="name">Ingredient</label>
+                    <input type="text" id="name" class="form-control">
+                </div>
+                <div class="col-sm-3 form-group">
+                    <label for="quan">Quantity</label>
+                    <input type="number" id="quan" class="form-control">
+                </div>
+                <div class="form-group col-sm-4">
+                    <label>Add</label> <br>
+                    <button class="btn btn-success" type="submit">Add</button>
+                </div>
+            </div>
+        </form>
+        <div class="row">
+            <div class="col-sm-8">
+                <label for="steps">Steps</label>
+                <input type="text" id="steps" class="form-control">
+            </div>
+            <div class="form-group col-sm-4">
+                <label>Add</label> <br>
+                <button class="btn btn-success" type="submit">Add</button>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="pull-center col-sm-12">
+                <div class="form-group col-sm-8">
+                    <button class="btn btn-success" type="submit">Save</button> - does'nt Work!
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-danger" (click)="back()">Back</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

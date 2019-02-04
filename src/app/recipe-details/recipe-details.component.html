@@ -1,0 +1,49 @@
+<style>
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+</style>
+<div class="row">
+    <div class="col-xs-12">
+        <div class="middle">
+            <h3><b>{{ recipe_detail.name }}</b></h3>
+        </div>
+    </div>
+</div>
+<br>
+<br>
+<div class="row">
+    <div class="col-xs-12">
+        <span>
+            <img [src]="recipe_detail.image" class="img-responsive" style="max-height: 400px; max-width: 500px">
+        </span>
+    </div>
+</div>
+<br>
+<br>
+<div class="row">
+    <div class="list-group-item clearfix">
+        <div class="pull-left">
+            <h3>Cooking Time</h3>
+            <p>Preperation Time : {{ingredient.cook_time}}</p>
+            <p>Cook Time : {{ingredient.prep_time}}</p>
+            <p>Total Time : {{ingredient.total_time}}</p>
+        </div>
+        <span class="pull-right">
+            <h3>Ingredients</h3>
+            <p>{{ingredient.name}}: {{ingredient.quantity}}-{{ingredient.measurement}}</p>
+        </span>
+    </div>
+</div>
+<br>
+<br>
+<h3>Directions</h3>
+<div class *ngFor="let dir of recipe_detail.directions; let i = index;">
+    <h5>Step {{i + 1}} - {{dir}}</h5>
+</div>
+<br><br>
+<div class="card-footer">
+    <button class="btn btn-danger" (click)="back()">Back</button>
+</div>
